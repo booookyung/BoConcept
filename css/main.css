@@ -1,0 +1,417 @@
+@import url(http://fonts.googleapis.com/css?family=Open%20Sans:300,400,500,600,700);
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url(common.css);
+/* ------------------------------------------------------------------------------
+	 Typography
+-------------------------------------------------------------------------------*/
+p {
+	font-size: 14px;
+	line-height: 22.4px;
+	color: #6c7279;
+}
+h1 {
+	font-size: 65px;
+	color: #2d3033;
+}
+h2 {
+	font-size: 40px;
+	color: #2d3033;
+}
+h3 {
+	font-size: 28px;
+	color: #2d3033;
+	font-weight: 300;
+}
+h4 {
+	font-size: 22px;
+	color: #2d3033;
+	font-weight: 400;
+}
+h5 {
+	font-size: 14px;
+	color: #2d3033;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.btn {
+	background-color: #333;
+	margin-top: 40px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	border-radius: 0px;
+	padding: 3% 7%;
+	display: inline-block;
+	text-transform: uppercase;
+}
+.btn:hover, .btn:focus {
+	background-color: #000;
+	color: #fff;
+}
+.btn-large {
+	padding: 15px 40px;
+}
+/* ------------------------------------------------------------------------------
+	 General Style
+-------------------------------------------------------------------------------*/
+a {
+	color: #e84545;
+}
+a:hover, a:focus {
+	text-decoration: none;
+	-moz-transition: background-color, color, 0.3s;
+	-o-transition: background-color, color, 0.3s;
+	-webkit-transition: background-color, color, 0.3s;
+	transition: background-color, color, 0.3s;
+}
+body {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	color: #6c7279;
+}
+ul, ol {
+	margin: 0;
+	padding: 0;
+}
+ul li {
+	list-style: none;
+}
+.section {
+	padding: 100px 0;
+}
+.no-padding {
+	padding: 0;
+}
+.no-gutter [class*=col-] {
+	padding-right: 0;
+	padding-left: 0;
+}
+/* ------------------------------------------------------------------------------
+	 Header & navigation
+-------------------------------------------------------------------------------*/
+#header {
+	position: fixed;
+	width: 94%;
+	z-index: 999;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+#header .header-content {
+	margin: 0 auto;
+	padding: 40px 0;
+	width: 100%;
+	-moz-transition: padding 0.3s;
+	-o-transition: padding 0.3s;
+	-webkit-transition: padding 0.3s;
+	transition: padding 0.3s;
+}
+#header .logo {
+	font-size: 21px;
+	color: #000;
+	font-weight: 700;
+	float: left;
+	text-transform: uppercase;
+}
+#header.fixed {
+	background-color: #fff;
+}
+#header.fixed .header-content {
+	border-bottom: 0;
+	padding: 25px 0;
+}
+#header.fixed .nav-toggle {
+	top: 18px;
+}
+.navigation.open {
+	opacity: 0.9;
+	visibility: visible;
+	-moz-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+.navigation {
+	float: right;
+}
+.navigation li {
+	display: inline-block;
+}
+.navigation a {
+	color: #000;
+	font-size: 13px;
+	font-weight: 300;
+	margin-left: 40px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.navigation a:hover, .navigation a.active {
+	color: orangered;
+	font-weight: bolder;
+}
+
+/* ------------------------------------------------------------------------------
+	 Header 
+-------------------------------------------------------------------------------*/
+
+.carousel {
+	width: 94%;
+	height: 500px;
+	margin: auto;
+}
+.item, .active, .carousel-inner {
+	height: 100%;
+}
+.carousel-caption {
+	bottom: 50%;
+	color: #fff;
+	left: 60%;
+	padding-top: 100px;
+	position: absolute;
+	right: 15%;
+	text-align: center;
+	z-index: 10;
+}
+.carousel-caption h3 {
+	font-family: "Open Sans", sans-serif;
+	color: #2d3033;
+	text-shadow: none;
+	font-size: 31px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 50px;
+}
+.carousel-caption p {
+	font-family: "Open Sans", sans-serif;
+	color: #6c7279;
+	text-shadow: none;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	padding-left: 100px;
+	
+}
+
+/* ------------------------------------------------------------------------------
+	 about
+-------------------------------------------------------------------------------*/
+.about {
+	width: 94%;
+	margin: auto;
+	background-color: #f2f2f2;
+}
+.about h4 {
+	font-size: 33px;
+	line-height: 33px;
+	letter-spacing: 2px;
+	font-weight: 300;
+}
+.about h5 {
+	font-size: 21px;
+	font-weight: 300;
+	margin-bottom: 10%;
+	text-transform: none;
+}
+.about p {
+	color: #6c7279;
+	font-size: 13px;
+	font-weight: 400;
+	margin-top: 7%;
+}
+.about-content {
+	margin: 50px;
+}
+.about-content li a {
+	color: #6c7279;
+	line-height: 30px;
+}
+.about-content li a:hover {
+	color: #000;
+}
+/* ------------------------------------------------------------------------------
+	 product
+-------------------------------------------------------------------------------*/
+#product {
+	width: 92%;
+	margin: auto;
+}
+#product .product-item {
+	right: 0;
+	margin: 0 0 2px;
+	padding: 0 1px;
+}
+#product .product-item {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+}
+#product .product-item .caption {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background: rgba(58, 54, 54, .9);
+	-webkit-transition: all ease .5s;
+	-moz-transition: all ease .5s;
+	transition: all ease .5s;
+}
+#product .product-item .caption:hover {
+	opacity: 1;
+}
+#product .product-item .caption .caption-content {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	height: 20px;
+	margin-top: -12px;
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+}
+#product .product-item  .caption .caption-content h3 {
+	margin: 0;
+	color: #e9eaed;
+	font-size: 17px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}
+#product .product-item .caption .caption-content h4 {
+	margin: 10px 0;
+	color: #e9eaed;
+	font-size: 12px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+#product * {
+	z-index: 2;
+}
+.caption li {
+		display: block;
+		width: 100px;
+		height: 50px;
+		line-height: 45px;
+		border: 1px solid #ccc;
+		border-radius: 50%;
+		text-transform: capitalize;
+		margin: 70px auto 0;
+	}
+	.caption li a{
+		color: #ccc;
+	}
+	.caption li a:hover{
+		color: orangered;
+		font-weight: bolder;
+	}
+
+
+
+/* ------------------------------------------------------------------------------
+	 Reviews
+-------------------------------------------------------------------------------*/
+.event {
+	width: 94%;
+	margin: auto;
+	background-color: #424242;
+	position: relative;
+	text-align: center;
+}
+
+.event h1 {
+	color: #fff;
+	font: 25px "Open Sans", sans-serif;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.event strong {
+	font-size: 20px;
+	font-weight: lighter;
+	color: #fff;
+	letter-spacing: 1px;
+}
+.event p {
+	color: #fff;
+	display: block;
+	font-size: 13px;
+	font-style: normal;
+	letter-spacing: 2px;
+	font-weight: bold;
+	margin-top: 30px;
+	text-transform: uppercase;
+}
+.event span {
+	display: inline-block;
+	color: #fff;
+	font-size: 13px;
+	letter-spacing: 2px;
+	font-weight: lighter;
+}
+
+/* ------------------------------------------------------------------------------
+	 Footer
+-------------------------------------------------------------------------------*/
+.footer {
+	width: 94%;
+	margin: auto;
+	text-align: left;
+	padding-top: 5%;
+	padding-bottom: 7%;
+}
+.footer h4 {
+	font-size: 13px;
+	color: #000;
+	margin: 0 0 15px 0;
+	padding: 0px;
+}
+.footer p {
+	font-size: 11px;
+	color: #6c7279;
+}
+.footer a {
+	color: #000;
+}
+.footer a:hover {
+	text-decoration: underline;
+}
+.footer .footer-share {
+	margin-top: 0;
+}
+.footer .footer-share li {
+	display: inline-block;
+	float: none;
+}
+.footer .footer-share a {
+	border: none;
+	font-size: 13px;
+	color: #000;
+	letter-spacing: 15px;
+}
+/* ------------------------------------------------------------------------------
+	 Work Detial 
+-------------------------------------------------------------------------------*/
+
+.work-detail {
+	width: 94%;
+	margin: auto;
+}
+.work-detail-margin {
+	margin-top: 7%;
+}
+.detail-image img {
+	width: 100%;
+}
+.detail-contentbox {
+	background-color: #f2f2f2;
+	padding: 3%;
+}
+.detail-content h4 {
+	font-size: 27px;
+	line-height: 27px;
+	letter-spacing: 1px;
+	font-weight: 300;
+}
+.detail-content p {
+	color: #6c7279;
+	font-size: 13px;
+	font-weight: 400;
+	margin-top: 7%;
+}
