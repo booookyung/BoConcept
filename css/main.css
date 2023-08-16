@@ -1,9 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open%20Sans:300,400,500,600,700);
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url(common.css);
-/* ------------------------------------------------------------------------------
-	 Typography
--------------------------------------------------------------------------------*/
+
 html {
     scroll-behavior: smooth;
 }
@@ -56,9 +54,7 @@ h5 {
 .btn-large {
 	padding: 15px 40px;
 }
-/* ------------------------------------------------------------------------------
-	 General Style
--------------------------------------------------------------------------------*/
+
 a {
 	color: #e84545;
 }
@@ -310,7 +306,7 @@ ul li {
 
 
 /* ------------------------------------------------------------------------------
-	 Reviews
+	 Event
 -------------------------------------------------------------------------------*/
 .event {
 	width: 94%;
@@ -388,34 +384,4 @@ ul li {
 	font-size: 13px;
 	color: #000;
 	letter-spacing: 15px;
-}
-/* ------------------------------------------------------------------------------
-	 Work Detial 
--------------------------------------------------------------------------------*/
-
-.work-detail {
-	width: 94%;
-	margin: auto;
-}
-.work-detail-margin {
-	margin-top: 7%;
-}
-.detail-image img {
-	width: 100%;
-}
-.detail-contentbox {
-	background-color: #f2f2f2;
-	padding: 3%;
-}
-.detail-content h4 {
-	font-size: 27px;
-	line-height: 27px;
-	letter-spacing: 1px;
-	font-weight: 300;
-}
-.detail-content p {
-	color: #6c7279;
-	font-size: 13px;
-	font-weight: 400;
-	margin-top: 7%;
 }
